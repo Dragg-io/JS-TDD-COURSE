@@ -167,4 +167,78 @@
 
     // Verifica o fim da string, retorna TRUE ou FALSE
     console.log(text.endsWith('tis.', 42)); // True
+
+    // Repete a string referênciada
+    console.log('lol'.repeat(10));
+
+    // Verifica se existe dentro da string
+    console.log(text.includes('alallala')); // false
+}
+
+// Array from
+{
+    const text = 'Lucas';
+    console.log(Array.from(text));
+
+
+    const list = document.querySelectorAll('#list li');
+    const listArray = Array.from(list);
+    console.log(listArray);
+
+    const names = listArray.map(name => name.textContent);
+
+    console.log(names);
+}
+
+// Array off
+{
+    const array = Array.of(1, 4, 'Lucas', { surname: 'Silva' });
+
+    // Agrupa dados por tipo e popula array
+    console.log(array);
+}
+
+// Array find e Array index
+{
+    const data = [
+        {
+            name: 'Lucas',
+            age: '19',
+            city: 'São Paulo',
+        },
+        {
+            name: 'Pedro',
+            age: '20',
+            city: 'Rio de Janeiro',
+        },
+    ];
+
+    const sampleArray = [4, -5, 0, -1];
+
+    const underZero = sampleArray.find(x => x < 0);
+
+    const underZeroIndex = sampleArray.findIndex(x => x < 0);
+
+    console.log(underZero);
+    console.log(underZeroIndex);
+
+
+    const lucas = data.find(person => person.name === 'Lucas');
+    const lucasIndex = data.findIndex(person => person.name === 'Lucas');
+
+    console.log(lucas);
+    console.log(lucasIndex);
+}
+
+
+// Array fill
+{
+    const arr = new Array(50);
+    arr.fill('lol', 3, 6);
+
+    console.log(arr);
+
+    const newArr = [1, 2, 3, 4, 5, 6];
+    newArr.fill('lol', 1, 3);
+    console.log(newArr);
 }
