@@ -1,0 +1,23 @@
+{
+  "name": "js-tdd-course",
+  "version": "1.0.0",
+  "description": "JS TDD Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint"
+  },
+  "keywords": [
+    "js",
+    "tdd"
+  ],
+  "author": "Lucas Silva",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "husky": "^1.0.0-rc.14"
+  }
+}
