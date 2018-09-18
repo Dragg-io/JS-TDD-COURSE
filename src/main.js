@@ -1,4 +1,4 @@
-a = 7;
+const a = 7;
 let b;
 
 while (a < 7) {
