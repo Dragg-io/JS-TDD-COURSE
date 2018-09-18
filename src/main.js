@@ -157,3 +157,14 @@
     hello();
     hello('Pedro', 'Campos');
 }
+
+// Métodos para string
+{
+    const text = 'Mussum Ipsum, cacilds vidis litro abertis.';
+
+    // Verifica o inicio da string, retorna TRUE ou FALSE
+    console.log(text.startsWith('ssum', 2)); // False
+
+    // Verifica o fim da string, retorna TRUE ou FALSE
+    console.log(text.endsWith('tis.', 42)); // True
+}
