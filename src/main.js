@@ -1,7 +1,43 @@
-const a = 7;
-let b;
+{
+    const pessoa = {
+        name: 'Lucas',
+        age: 19,
+    };
 
-while (a < 7) {
-    b = a + 1;
-    console.log(b);
+    // impede que o objeto seja mudado
+    Object.freeze(pessoa);
+
+    pessoa.age = 20;
+
+    console.log(pessoa.age);
+}
+
+{
+    const brasil = ['são paulo', 'rio de janeiro', 'paraná'];
+
+    /* funções que retornam valor sem tratamento sevem ser em
+    uma linha só e não é necessário o return */
+    const love = brasil.map(name => `I love ${name}!`);
+
+    const loveChain = brasil
+        .filter(name => name === 'São Paulo')
+        .map(name => `I love ${name}!`);
+
+    console.log(love);
+    console.log(loveChain);
+}
+
+{
+    const brasil = ['são paulo', 'rio de janeiro', 'paraná'];
+
+    /* funções que retornam valor sem tratamento sevem ser em
+    uma linha só e não é necessário o return */
+    const love = brasil.map(name => `I love ${name}!`);
+
+    const loveChain = brasil
+        .filter(name => name === 'São Paulo')
+        .map(name => `I love ${name}!`);
+
+    console.log(love);
+    console.log(loveChain);
 }
